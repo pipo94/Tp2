@@ -1,0 +1,82 @@
+Clases
+
+
+Granjeros:
+- Cant Jugadores
+- Lista Jugadores (clase)	
+- Modo de Juego 
+- Filas inicial
+- Columnas inicial 
+- Turnos 
+
+	Metodos:
+	+juego(cant jugadores, modo, filas, columnas, turnos);
+	+void ingresarNombres();
+	+string iniciarJuego();				
+
+Jugador:
+#Nombre de jugador
+- TERRENO arreglo de parcelas
+- Creditos
+- Turnos Restantes
+- Almacen (clase)
+- Tanque de Agua (clase)
+
+	Metodos:
+
+	conocerAccion(); (Apunta a parcela)
+			
+	Una de las dos: 
+	+ actualizarTerreno();	
+	+ analizarTurno();
+
+	To do:
+	+ comprarTerreno();
+	+ venderTerreno();
+
+Almacen:
+
+- Capacidad
+- Lista cosechas
+- Envios (clase)
+
+
+Tanque de Agua:
+
+- Capacidad
+- Unidades de riego
+- Multiplicador //4,5,6
+- Dado
+
+
+Parcelas:
+#numero de parcela
+- Cultivo (clase) // Cuando sea V O R cambia el nombre
+- (bool) Regada
+	
+	metodos:
+	+ bool cultivar(fila, columnas);
+	+ bool regar(fila, columna);
+	+ bool almacenar(fila, columna);
+	+ bool vender(fila, columna);
+	+ bool expanderTanque(capacidad extra);
+	+ bool expandirAlmacen(capacidad extra);
+
+
+Cultivo:
+
+- Nombre
+- Costo
+- Ganancia
+- Turnos Cosecha
+- Turnos Recuperacion
+- Riego Requerido
+
+
+
+Envio:
+
+- Destino
+- Importe
+- Cultivo de interés
+
